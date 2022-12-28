@@ -7,7 +7,7 @@
 
 :root {
   /* colors */
-  --primary-orange: hsl(25, 97%, 53%);
+  --primary-orange: #fb7413;
   --neutral-white: hsl(0, 0%, 100%);
   --neutral-light-grey: hsl(217, 12%, 63%);
   --neutral-medium-grey: hsl(216, 12%, 54%);

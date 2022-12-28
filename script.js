@@ -15,14 +15,15 @@ particlesJS(
   {
     particles: {
       number: {
-        value: 80,
+        value: 45,
         density: {
           enable: true,
           value_area: 1299.3805191013182,
         },
       },
       color: {
-        value: ["#5D47BA", "#FFDBFF", "#FB5435", "#E00A30", "#04CEF9"],
+        value: ["#fb7413"],
+        // value: ["#5D47BA", "#FFDBFF", "#FB5435", "#E00A30", "#04CEF9"],
       },
       shape: {
         type: "circle",
@@ -69,7 +70,7 @@ particlesJS(
       move: {
         enable: true,
         speed: 6,
-        direction: "top",
+        direction: "down",
         random: false,
         straight: false,
         out_mode: "out",
