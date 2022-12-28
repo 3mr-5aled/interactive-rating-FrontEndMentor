@@ -40,7 +40,7 @@ body {
   padding: calc(8px + 1.5625vw);
   /* margin: 100px; */
   border-radius: 25px;
-  line-height: 3rem;
+  line-height: 2.5rem;
   display: flex;
 }
 
@@ -52,7 +52,7 @@ body {
   }
 }
 
-i {
+.star {
   color: var(--primary-orange);
   background-color: var(--neutral-dark-grey);
   border-radius: 50%;
@@ -92,6 +92,7 @@ form {
   padding-top: 15px;
   border: none;
   border-radius: 50%;
+  transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
 .ratingNum:hover {
@@ -107,7 +108,7 @@ form {
   text-transform: capitalize;
   letter-spacing: 2px;
   font-weight: bold;
-  margin-top: 25px;
+  margin-top: 15px;
   display: block;
   height: 50px;
   width: 100%;
@@ -115,12 +116,15 @@ form {
   background-color: var(--primary-orange);
   border: transparent;
   border-radius: 25px;
+  transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
 .submit:hover {
   background-color: var(--neutral-white);
   color: var(--primary-orange);
 }
+
+/* thanks form */
 
 .thanks {
   display: none;
@@ -129,6 +133,61 @@ form {
   align-items: center;
   padding: 10px 10px;
   padding-bottom: 2rem;
+  position: relative;
+  animation: showup 0.5s linear 0s normal none;
+}
+@keyframes showup {
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.one,
+.two,
+.three {
+  position: absolute;
+  content: "";
+  background-color: white;
+  width: 15px;
+  height: 5px;
+  border-radius: 25px;
+}
+.one {
+  right: -20px;
+  top: -35px;
+  transform: rotate(110deg);
+}
+.two {
+  right: -30px;
+  top: -30px;
+  transform: rotate(135deg);
+}
+.three {
+  right: -35px;
+  top: -20px;
+  transform: rotate(170deg);
+}
+
+.thanksImg {
+  padding: 25px 0;
+  animation: rotate 1s infinite linear 0s normal none;
+}
+@keyframes rotate {
+  0% {
+    transform: scale(1) rotate(-2deg);
+  }
+  50% {
+    transform: scale(1) rotate(2deg);
+  }
+  100% {
+    transform: scale(1) rotate(-2deg);
+  }
 }
 .selected {
   font-size: 14px;
