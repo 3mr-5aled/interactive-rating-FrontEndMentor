@@ -47,7 +47,7 @@ body {
 
 @media screen and (max-width: 480px) {
   .card {
-    width: 80vh;
+    margin: 0 25px;
     height: 22rem;
     /* height: -webkit-fill-available; */
   }
