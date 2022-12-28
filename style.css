@@ -213,3 +213,17 @@ form {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+.particles {
+  visibility: hidden;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -100;
+}
+
+#particles-js {
+  position: absolute;
+  height: 100vh;
+  z-index: -100;
+  width: 100%;
+}
