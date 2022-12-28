@@ -127,5 +127,5 @@ particlesJS(
 document.querySelector("#submit").addEventListener("click", function () {
   document.querySelector(".rating").style.display = "none"
   document.querySelector(".thanks").style.display = "flex"
-  document.querySelector(".particles").style.visibility = "visible"
+  document.querySelector("#particles-js").style.visibility = "visible"
 })
